@@ -6,6 +6,9 @@ import { CelebrityCard } from "@/components/celebrities/celebrity-card";
 import type { Celebrity } from "@/shared/schema";
 import { mockCelebrities } from "@/lib/mock-data";
 import { VideoCarousel } from "@/components/video-carousel";
+import HowItWorks from "./HowItWorks"
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 function Hero() {
   return (
@@ -92,9 +95,12 @@ function CelebrityShowcase() {
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Header/>
       <Hero />
       <VideoCarousel />
       <CelebrityShowcase />
+      <HowItWorks/>
+      <Footer/>
     </div>
   );
 };

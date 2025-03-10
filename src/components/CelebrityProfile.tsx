@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Celebrity } from '../types/types';
+import { Celebrity } from '../types/Types';
 import ImageGallery from './ImageGallery';
-import ServicesList from './ServicesList';
-import ReviewsSection from './ReviewsSection';
+import ServicesList from './ServiceList';
+import ReviewsSection from './ReviewSection';
 import BookingForm from './BookingForm';
 
 interface CelebrityProfileProps {
@@ -30,7 +30,7 @@ const CelebrityProfile: React.FC<CelebrityProfileProps> = ({ celebrity }) => {
                 {[...Array(5)].map((_, i) => (
                   <svg 
                     key={i} 
-                    className={w-5 h-5 ${i < Math.round(celebrity.rating) ? 'text-yellow-400' : 'text-gray-300'}}
+                    className={`w-5 h-5 ${i < Math.round(celebrity.rating) ? 'text-yellow-400' : 'text-gray-300'}`}
                     fill="currentColor" 
                     viewBox="0 0 20 20"
                   >

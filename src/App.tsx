@@ -9,7 +9,7 @@ import Celebrities from "./pages/Celebrities";
 import NotFound from "./pages/NotFound";
 import HowItWorks from "./pages/HowItWorks";
 import CelebrityProfile from './components/CelebrityProfile';
-import { Celebrity } from './types/types';
+import { Celebrity } from './types/Types';
 const queryClient = new QueryClient();
 
 

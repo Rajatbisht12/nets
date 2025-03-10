@@ -28,7 +28,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
           >
             <img 
               src={image || "/api/placeholder/150/150"} 
-              alt={Thumbnail ${index + 1}} 
+              alt={`Thumbnail ${index + 1}`} 
               className="object-cover w-full h-full"
             />
           </div>

@@ -71,7 +71,7 @@ function CelebrityShowcase() {
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Featured Celebrities</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">Discover our handpicked selection of popular celebrities ready to create unforgettable moments for you and your loved ones.</p>
         </div>
-        
+        <Link to="/celebritiesProfile">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {celebrities.map((celebrity, index) => (
             <div key={celebrity.id} className="animate-scale-up" style={{ animationDelay: `${index * 150}ms` }}>
@@ -79,6 +79,7 @@ function CelebrityShowcase() {
             </div>
           ))}
         </div>
+        </Link>
         
         <div className="mt-12 text-center">
           <Link to="/celebrities">

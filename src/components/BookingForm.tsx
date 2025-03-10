@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Service, BookingFormData } from '../types/types';
+import { Service, BookingFormData } from '../types/Types';
 
 interface BookingFormProps {
   service: Service;
@@ -69,7 +69,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ service, celebrityId }) => {
           required
           rows={4}
           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          placeholder={Tell ${service.type === 'VideoMessage' ? 'us what you want in your video' : service.type === 'DM' ? 'us what you want to discuss' : 'us about your meet & greet expectations'}}
+          placeholder={`Tell ${service.type === 'VideoMessage' ? 'us what you want in your video' : service.type === 'DM' ? 'us what you want to discuss' : 'us about your meet & greet expectations'}`}
         ></textarea>
       </div>
       
@@ -111,7 +111,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ service, celebrityId }) => {
             isSubmitting ? 'bg-blue-400' : 'bg-blue-600 hover:bg-blue-700'
           } transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
         >
-          {isSubmitting ? 'Processing...' : Book Now - $${service.price.toFixed(2)}}
+          {isSubmitting ? 'Processing...' : `Book Now - $${service.price.toFixed(2)}`}
         </button>
       </div>
     </form>

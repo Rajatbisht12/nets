@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import HowItWorks from "./pages/HowItWorks";
 import CelebrityProfile from './components/CelebrityProfile';
 import { Celebrity } from './types/Types';
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 const queryClient = new QueryClient();
 
 
@@ -83,6 +85,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/celebrities" element={<Celebrities />} />
@@ -90,6 +93,7 @@ const App = () => (
           <Route path="/howitworks" element={<HowItWorks/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+      <Footer/>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

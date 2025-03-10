@@ -63,11 +63,11 @@ const Header = () => {
               How It Works
             </Link>
             <Link 
-              to="/pricing" 
+              to="/celebritiesProfile" 
               className="block text-gray-600 hover:text-purple-600 transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Pricing
+              Celebrity-Profiles
             </Link>
             <div className="flex flex-col space-y-2 pt-2">
               <button className="btn-outline w-full">Sign Up</button>

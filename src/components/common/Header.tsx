@@ -56,7 +56,7 @@ const Header = () => {
               Celebrities
             </Link>
             <Link 
-              to="/how-it-works" 
+              to="/howitworks" 
               className="block text-gray-600 hover:text-purple-600 transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >

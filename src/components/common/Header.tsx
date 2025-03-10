@@ -40,8 +40,12 @@ const Header = () => {
             <Link to="/pricing" className="text-gray-600 hover:text-purple-600 transition-colors font-medium">
               Pricing
             </Link>
-            <button className="btn-outline">Sign Up</button>
-            <button className="btn-primary">Login</button>
+            <button className="btn-outline">
+              <Link to="/signup">SignUp</Link>
+            </button>
+            <button className="btn-primary">
+              <Link to="/login">Login</Link>
+            </button>
           </nav>
         </div>
 

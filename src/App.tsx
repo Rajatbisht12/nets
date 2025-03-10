@@ -12,6 +12,9 @@ import CelebrityProfile from './components/CelebrityProfile';
 import { Celebrity } from './types/Types';
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
+import Login from "./components/Logins/Login";
+import Signup from "./components/Logins/Signup";
+import ProtectedRoute from "./components/Logins/ProtectedRoutes";
 const queryClient = new QueryClient();
 
 
@@ -89,6 +92,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/celebrities" element={<Celebrities />} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
           <Route path="/celebritiesProfile" element={ <CelebrityProfile celebrity={mockCelebrity} />} />
           <Route path="/howitworks" element={<HowItWorks/>} />
           <Route path="*" element={<NotFound />} />
